@@ -1,0 +1,1 @@
+$end("favicon.ico request")
