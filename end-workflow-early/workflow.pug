@@ -18,22 +18,3 @@ workflow
         }}",
       )
       respond($code="@steps/respond.js")
-
-
-
-// 1. What is the key for the new HTTP trigger?
-// 2. Known issue: Finding the key for an action is currently hard
-// 3. Filling in values for async options can be tough (e.g., to select "my drive") -- 
-//    In these cases, users may initially scaffold some steps, export the def and then edit it
-// 4. It's currently hard to find the prop values for actions (can be addressed in the marketplace and the builder)
-// 5. Did I pass the array correctly above?
-
-
-// GENERAL: Should condiditionals/branching be explicit steps like looping? How will they otherwise get represented in the UI? 
-// I.e., it seems like you can currently apply a conditional to a step, or you can use a template to essentially create a
-// paths (which are steps leading to another series of steps). 
-
-
-// Some of the DX patterns for updating sources may apply to workflows, but there may be gaps. Needs more thought.
-// E.g., I create a workflow and deploy. I then modify it and want to deploy an update (I guess I need to update the 
-// workflow and referecnce it by ID?).
